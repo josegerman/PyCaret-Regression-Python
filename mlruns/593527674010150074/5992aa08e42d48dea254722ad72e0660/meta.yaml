@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/5992aa08e42d48dea254722ad72e0660/artifacts
+end_time: 1707176594528
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: 5992aa08e42d48dea254722ad72e0660
+run_name: Bayesian Ridge
+run_uuid: 5992aa08e42d48dea254722ad72e0660
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707176594433
+status: 3
+tags: []
+user_id: joseg

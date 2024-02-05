@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/533f691d127b4e03bc87e3f01c1db74b/artifacts
+end_time: 1707176749864
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: 533f691d127b4e03bc87e3f01c1db74b
+run_name: Stacking Regressor
+run_uuid: 533f691d127b4e03bc87e3f01c1db74b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707176749350
+status: 3
+tags: []
+user_id: joseg

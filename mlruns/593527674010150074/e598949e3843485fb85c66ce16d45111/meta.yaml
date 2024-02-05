@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/e598949e3843485fb85c66ce16d45111/artifacts
+end_time: 1707176578990
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: e598949e3843485fb85c66ce16d45111
+run_name: Extra Trees Regressor
+run_uuid: e598949e3843485fb85c66ce16d45111
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707176578897
+status: 3
+tags: []
+user_id: joseg

@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/7f0e516bb2684a64a7fbe91d7398f627/artifacts
+end_time: 1707176579970
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: 7f0e516bb2684a64a7fbe91d7398f627
+run_name: Elastic Net
+run_uuid: 7f0e516bb2684a64a7fbe91d7398f627
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707176579879
+status: 3
+tags: []
+user_id: joseg

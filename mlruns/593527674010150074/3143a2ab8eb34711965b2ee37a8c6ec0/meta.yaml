@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/3143a2ab8eb34711965b2ee37a8c6ec0/artifacts
+end_time: 1707176701216
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: 3143a2ab8eb34711965b2ee37a8c6ec0
+run_name: Bagging Regressor
+run_uuid: 3143a2ab8eb34711965b2ee37a8c6ec0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707176700652
+status: 3
+tags: []
+user_id: joseg

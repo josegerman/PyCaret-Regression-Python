@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/cc035d5bf6764248852a9fd4dc92decc/artifacts
+end_time: 1707176620515
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: cc035d5bf6764248852a9fd4dc92decc
+run_name: Decision Tree Regressor
+run_uuid: cc035d5bf6764248852a9fd4dc92decc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707176620417
+status: 3
+tags: []
+user_id: joseg

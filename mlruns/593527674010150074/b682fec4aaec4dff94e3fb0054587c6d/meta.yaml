@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/b682fec4aaec4dff94e3fb0054587c6d/artifacts
+end_time: 1707176578790
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: b682fec4aaec4dff94e3fb0054587c6d
+run_name: Light Gradient Boosting Machine
+run_uuid: b682fec4aaec4dff94e3fb0054587c6d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707176578691
+status: 3
+tags: []
+user_id: joseg

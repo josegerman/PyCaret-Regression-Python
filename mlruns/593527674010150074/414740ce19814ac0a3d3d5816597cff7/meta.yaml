@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/414740ce19814ac0a3d3d5816597cff7/artifacts
+end_time: 1707176619899
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: 414740ce19814ac0a3d3d5816597cff7
+run_name: Lasso Regression
+run_uuid: 414740ce19814ac0a3d3d5816597cff7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707176619805
+status: 3
+tags: []
+user_id: joseg

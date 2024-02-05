@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/974101ce44664e1085927aba2fa74689/artifacts
+end_time: 1707176581723
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: 974101ce44664e1085927aba2fa74689
+run_name: Linear Regression
+run_uuid: 974101ce44664e1085927aba2fa74689
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707176581642
+status: 3
+tags: []
+user_id: joseg

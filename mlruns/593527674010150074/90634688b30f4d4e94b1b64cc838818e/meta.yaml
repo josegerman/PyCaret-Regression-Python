@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/90634688b30f4d4e94b1b64cc838818e/artifacts
+end_time: 1707176580927
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: 90634688b30f4d4e94b1b64cc838818e
+run_name: Huber Regressor
+run_uuid: 90634688b30f4d4e94b1b64cc838818e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707176580841
+status: 3
+tags: []
+user_id: joseg

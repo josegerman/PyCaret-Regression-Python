@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/8fd0541cb85d492485442fbeaf76a829/artifacts
+end_time: 1707176620110
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: 8fd0541cb85d492485442fbeaf76a829
+run_name: AdaBoost Regressor
+run_uuid: 8fd0541cb85d492485442fbeaf76a829
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707176620013
+status: 3
+tags: []
+user_id: joseg

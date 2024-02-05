@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/78b64aae97fa4352a1bf8f312761950e/artifacts
+end_time: 1707176621120
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: 78b64aae97fa4352a1bf8f312761950e
+run_name: Passive Aggressive Regressor
+run_uuid: 78b64aae97fa4352a1bf8f312761950e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707176621023
+status: 3
+tags: []
+user_id: joseg

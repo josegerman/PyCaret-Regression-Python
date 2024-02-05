@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/0f5bad42a7b94292946c96d29259ccdb/artifacts
+end_time: 1707176619493
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: 0f5bad42a7b94292946c96d29259ccdb
+run_name: Ridge Regression
+run_uuid: 0f5bad42a7b94292946c96d29259ccdb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707176619402
+status: 3
+tags: []
+user_id: joseg

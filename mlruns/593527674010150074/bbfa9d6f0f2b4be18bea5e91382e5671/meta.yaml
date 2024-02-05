@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/bbfa9d6f0f2b4be18bea5e91382e5671/artifacts
+end_time: 1707176581536
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: bbfa9d6f0f2b4be18bea5e91382e5671
+run_name: Dummy Regressor
+run_uuid: bbfa9d6f0f2b4be18bea5e91382e5671
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707176581450
+status: 3
+tags: []
+user_id: joseg
