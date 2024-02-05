@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/415c0c63d2b948d8981e12d15ecfc0dc/artifacts
+end_time: 1707091665008
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: 415c0c63d2b948d8981e12d15ecfc0dc
+run_name: Orthogonal Matching Pursuit
+run_uuid: 415c0c63d2b948d8981e12d15ecfc0dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707091664929
+status: 3
+tags: []
+user_id: joseg

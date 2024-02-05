@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/919a308040a049729c1da2c207152d6d/artifacts
+end_time: 1707091663707
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: 919a308040a049729c1da2c207152d6d
+run_name: Random Forest Regressor
+run_uuid: 919a308040a049729c1da2c207152d6d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707091663620
+status: 3
+tags: []
+user_id: joseg

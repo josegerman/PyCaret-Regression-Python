@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/3b6e61f1d58a43b5bfd3b045beb54587/artifacts
+end_time: 1707091580155
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: 3b6e61f1d58a43b5bfd3b045beb54587
+run_name: Least Angle Regression
+run_uuid: 3b6e61f1d58a43b5bfd3b045beb54587
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707091580066
+status: 3
+tags: []
+user_id: joseg

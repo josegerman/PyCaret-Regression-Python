@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joseg/Documents/GitHub/PyCaret-Regression-Python/mlruns/593527674010150074/15d8c1729d27444c92dd56bc875bc684/artifacts
+end_time: 1707091579419
+entry_point_name: ''
+experiment_id: '593527674010150074'
+lifecycle_stage: active
+run_id: 15d8c1729d27444c92dd56bc875bc684
+run_name: K Neighbors Regressor
+run_uuid: 15d8c1729d27444c92dd56bc875bc684
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707091579331
+status: 3
+tags: []
+user_id: joseg
