@@ -2452,3 +2452,1405 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
 2024-02-04 19:07:46,423:INFO:_display_container: 6
 2024-02-04 19:07:46,423:INFO:[GradientBoostingRegressor(random_state=123), LGBMRegressor(n_jobs=-1, random_state=123), ExtraTreesRegressor(n_jobs=-1, random_state=123)]
 2024-02-04 19:07:46,423:INFO:compare_models() successfully completed......................................
+2024-02-04 19:09:26,980:INFO:Initializing tune_model()
+2024-02-04 19:09:26,980:INFO:tune_model(estimator=GradientBoostingRegressor(random_state=123), fold=None, round=4, n_iter=10, custom_grid=None, optimize=R2, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>)
+2024-02-04 19:09:26,980:INFO:Checking exceptions
+2024-02-04 19:09:26,996:INFO:Copying training dataset
+2024-02-04 19:09:26,999:INFO:Checking base model
+2024-02-04 19:09:26,999:INFO:Base model : Gradient Boosting Regressor
+2024-02-04 19:09:27,004:INFO:Declaring metric variables
+2024-02-04 19:09:27,004:INFO:Defining Hyperparameters
+2024-02-04 19:09:27,127:INFO:Tuning with n_jobs=-1
+2024-02-04 19:09:27,127:INFO:Initializing RandomizedSearchCV
+2024-02-04 19:09:40,626:INFO:best_params: {'actual_estimator__subsample': 0.85, 'actual_estimator__n_estimators': 230, 'actual_estimator__min_samples_split': 5, 'actual_estimator__min_samples_leaf': 5, 'actual_estimator__min_impurity_decrease': 0.02, 'actual_estimator__max_features': 1.0, 'actual_estimator__max_depth': 7, 'actual_estimator__learning_rate': 0.15}
+2024-02-04 19:09:40,626:INFO:Hyperparameter search completed
+2024-02-04 19:09:40,626:INFO:SubProcess create_model() called ==================================
+2024-02-04 19:09:40,626:INFO:Initializing create_model()
+2024-02-04 19:09:40,626:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, estimator=GradientBoostingRegressor(random_state=123), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001ECCF4DDD30>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'subsample': 0.85, 'n_estimators': 230, 'min_samples_split': 5, 'min_samples_leaf': 5, 'min_impurity_decrease': 0.02, 'max_features': 1.0, 'max_depth': 7, 'learning_rate': 0.15})
+2024-02-04 19:09:40,626:INFO:Checking exceptions
+2024-02-04 19:09:40,626:INFO:Importing libraries
+2024-02-04 19:09:40,626:INFO:Copying training dataset
+2024-02-04 19:09:40,632:INFO:Defining folds
+2024-02-04 19:09:40,632:INFO:Declaring metric variables
+2024-02-04 19:09:40,636:INFO:Importing untrained model
+2024-02-04 19:09:40,636:INFO:Declaring custom model
+2024-02-04 19:09:40,636:INFO:Gradient Boosting Regressor Imported successfully
+2024-02-04 19:09:40,636:INFO:Starting cross validation
+2024-02-04 19:09:40,636:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-04 19:09:45,894:INFO:Calculating mean and std
+2024-02-04 19:09:45,894:INFO:Creating metrics dataframe
+2024-02-04 19:09:45,898:INFO:Finalizing model
+2024-02-04 19:09:47,828:INFO:Uploading results into container
+2024-02-04 19:09:47,838:INFO:Uploading model into container now
+2024-02-04 19:09:47,838:INFO:_master_model_container: 42
+2024-02-04 19:09:47,838:INFO:_display_container: 7
+2024-02-04 19:09:47,840:INFO:GradientBoostingRegressor(learning_rate=0.15, max_depth=7, max_features=1.0,
+                          min_impurity_decrease=0.02, min_samples_leaf=5,
+                          min_samples_split=5, n_estimators=230,
+                          random_state=123, subsample=0.85)
+2024-02-04 19:09:47,840:INFO:create_model() successfully completed......................................
+2024-02-04 19:09:47,933:INFO:SubProcess create_model() end ==================================
+2024-02-04 19:09:47,933:INFO:choose_better activated
+2024-02-04 19:09:47,933:INFO:SubProcess create_model() called ==================================
+2024-02-04 19:09:47,945:INFO:Initializing create_model()
+2024-02-04 19:09:47,945:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, estimator=GradientBoostingRegressor(random_state=123), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-04 19:09:47,945:INFO:Checking exceptions
+2024-02-04 19:09:47,945:INFO:Importing libraries
+2024-02-04 19:09:47,945:INFO:Copying training dataset
+2024-02-04 19:09:47,945:INFO:Defining folds
+2024-02-04 19:09:47,945:INFO:Declaring metric variables
+2024-02-04 19:09:47,945:INFO:Importing untrained model
+2024-02-04 19:09:47,945:INFO:Declaring custom model
+2024-02-04 19:09:47,945:INFO:Gradient Boosting Regressor Imported successfully
+2024-02-04 19:09:47,945:INFO:Starting cross validation
+2024-02-04 19:09:47,945:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-04 19:09:49,546:INFO:Calculating mean and std
+2024-02-04 19:09:49,546:INFO:Creating metrics dataframe
+2024-02-04 19:09:49,546:INFO:Finalizing model
+2024-02-04 19:09:50,064:INFO:Uploading results into container
+2024-02-04 19:09:50,064:INFO:Uploading model into container now
+2024-02-04 19:09:50,064:INFO:_master_model_container: 43
+2024-02-04 19:09:50,064:INFO:_display_container: 8
+2024-02-04 19:09:50,064:INFO:GradientBoostingRegressor(random_state=123)
+2024-02-04 19:09:50,064:INFO:create_model() successfully completed......................................
+2024-02-04 19:09:50,150:INFO:SubProcess create_model() end ==================================
+2024-02-04 19:09:50,150:INFO:GradientBoostingRegressor(random_state=123) result for R2 is 0.8969
+2024-02-04 19:09:50,150:INFO:GradientBoostingRegressor(learning_rate=0.15, max_depth=7, max_features=1.0,
+                          min_impurity_decrease=0.02, min_samples_leaf=5,
+                          min_samples_split=5, n_estimators=230,
+                          random_state=123, subsample=0.85) result for R2 is 0.8931
+2024-02-04 19:09:50,150:INFO:GradientBoostingRegressor(random_state=123) is best model
+2024-02-04 19:09:50,150:INFO:choose_better completed
+2024-02-04 19:09:50,150:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2024-02-04 19:09:50,150:INFO:Creating Dashboard logs
+2024-02-04 19:09:50,150:INFO:Model: Gradient Boosting Regressor
+2024-02-04 19:09:50,166:INFO:Logged params: {'alpha': 0.9, 'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.1, 'loss': 'squared_error', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_iter_no_change': None, 'random_state': 123, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}
+2024-02-04 19:09:50,240:INFO:Initializing predict_model()
+2024-02-04 19:09:50,240:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, estimator=GradientBoostingRegressor(random_state=123), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=False, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001ECD072F0D0>)
+2024-02-04 19:09:50,240:INFO:Checking exceptions
+2024-02-04 19:09:50,240:INFO:Preloading libraries
+2024-02-04 19:09:50,637:INFO:_master_model_container: 43
+2024-02-04 19:09:50,637:INFO:_display_container: 7
+2024-02-04 19:09:50,637:INFO:GradientBoostingRegressor(random_state=123)
+2024-02-04 19:09:50,637:INFO:tune_model() successfully completed......................................
+2024-02-04 19:10:07,528:INFO:Initializing ensemble_model()
+2024-02-04 19:10:07,528:INFO:ensemble_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, estimator=GradientBoostingRegressor(random_state=123), method=Bagging, fold=None, n_estimators=50, round=4, choose_better=False, optimize=R2, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, return_train_score=False)
+2024-02-04 19:10:07,528:INFO:Checking exceptions
+2024-02-04 19:10:07,544:INFO:Importing libraries
+2024-02-04 19:10:07,544:INFO:Copying training dataset
+2024-02-04 19:10:07,544:INFO:Checking base model
+2024-02-04 19:10:07,544:INFO:Base model : Gradient Boosting Regressor
+2024-02-04 19:10:07,549:INFO:Importing untrained ensembler
+2024-02-04 19:10:07,549:INFO:Ensemble method set to Bagging
+2024-02-04 19:10:07,549:INFO:SubProcess create_model() called ==================================
+2024-02-04 19:10:07,549:INFO:Initializing create_model()
+2024-02-04 19:10:07,549:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, estimator=BaggingRegressor(estimator=GradientBoostingRegressor(random_state=123),
+                 n_estimators=50, random_state=123), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001ECA7665970>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-04 19:10:07,549:INFO:Checking exceptions
+2024-02-04 19:10:07,549:INFO:Importing libraries
+2024-02-04 19:10:07,549:INFO:Copying training dataset
+2024-02-04 19:10:07,549:INFO:Defining folds
+2024-02-04 19:10:07,549:INFO:Declaring metric variables
+2024-02-04 19:10:07,557:INFO:Importing untrained model
+2024-02-04 19:10:07,557:INFO:Declaring custom model
+2024-02-04 19:10:07,561:INFO:Bagging Regressor Imported successfully
+2024-02-04 19:10:07,565:INFO:Starting cross validation
+2024-02-04 19:10:07,565:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-04 19:10:46,935:INFO:Calculating mean and std
+2024-02-04 19:10:46,936:INFO:Creating metrics dataframe
+2024-02-04 19:10:46,940:INFO:Finalizing model
+2024-02-04 19:11:01,603:INFO:Uploading results into container
+2024-02-04 19:11:01,604:INFO:Uploading model into container now
+2024-02-04 19:11:01,604:INFO:_master_model_container: 44
+2024-02-04 19:11:01,605:INFO:_display_container: 8
+2024-02-04 19:11:01,605:INFO:BaggingRegressor(estimator=GradientBoostingRegressor(random_state=123),
+                 n_estimators=50, random_state=123)
+2024-02-04 19:11:01,605:INFO:create_model() successfully completed......................................
+2024-02-04 19:11:01,764:INFO:SubProcess create_model() end ==================================
+2024-02-04 19:11:01,765:INFO:Creating Dashboard logs
+2024-02-04 19:11:01,768:INFO:Model: Bagging Regressor
+2024-02-04 19:11:01,790:INFO:Logged params: {'base_estimator': 'deprecated', 'bootstrap': True, 'bootstrap_features': False, 'estimator__alpha': 0.9, 'estimator__ccp_alpha': 0.0, 'estimator__criterion': 'friedman_mse', 'estimator__init': None, 'estimator__learning_rate': 0.1, 'estimator__loss': 'squared_error', 'estimator__max_depth': 3, 'estimator__max_features': None, 'estimator__max_leaf_nodes': None, 'estimator__min_impurity_decrease': 0.0, 'estimator__min_samples_leaf': 1, 'estimator__min_samples_split': 2, 'estimator__min_weight_fraction_leaf': 0.0, 'estimator__n_estimators': 100, 'estimator__n_iter_no_change': None, 'estimator__random_state': 123, 'estimator__subsample': 1.0, 'estimator__tol': 0.0001, 'estimator__validation_fraction': 0.1, 'estimator__verbose': 0, 'estimator__warm_start': False, 'estimator': GradientBoostingRegressor(random_state=123), 'max_features': 1.0, 'max_samples': 1.0, 'n_estimators': 50, 'n_jobs': None, 'oob_score': False, 'random_state': 123, 'verbose': 0, 'warm_start': False}
+2024-02-04 19:11:01,869:INFO:Initializing predict_model()
+2024-02-04 19:11:01,869:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, estimator=BaggingRegressor(estimator=GradientBoostingRegressor(random_state=123),
+                 n_estimators=50, random_state=123), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=False, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001ECD06CC1F0>)
+2024-02-04 19:11:01,869:INFO:Checking exceptions
+2024-02-04 19:11:01,869:INFO:Preloading libraries
+2024-02-04 19:11:02,467:INFO:_master_model_container: 44
+2024-02-04 19:11:02,467:INFO:_display_container: 8
+2024-02-04 19:11:02,467:INFO:BaggingRegressor(estimator=GradientBoostingRegressor(random_state=123),
+                 n_estimators=50, random_state=123)
+2024-02-04 19:11:02,467:INFO:ensemble_model() successfully completed......................................
+2024-02-04 19:11:02,627:INFO:Initializing ensemble_model()
+2024-02-04 19:11:02,627:INFO:ensemble_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, estimator=GradientBoostingRegressor(random_state=123), method=Boosting, fold=None, n_estimators=10, round=4, choose_better=False, optimize=R2, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, return_train_score=False)
+2024-02-04 19:11:02,627:INFO:Checking exceptions
+2024-02-04 19:11:06,539:INFO:Importing libraries
+2024-02-04 19:11:06,539:INFO:Copying training dataset
+2024-02-04 19:11:06,539:INFO:Checking base model
+2024-02-04 19:11:06,539:INFO:Base model : Gradient Boosting Regressor
+2024-02-04 19:11:06,547:INFO:Importing untrained ensembler
+2024-02-04 19:11:06,547:INFO:Ensemble method set to Boosting
+2024-02-04 19:11:06,547:INFO:SubProcess create_model() called ==================================
+2024-02-04 19:11:06,548:INFO:Initializing create_model()
+2024-02-04 19:11:06,548:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, estimator=AdaBoostRegressor(estimator=GradientBoostingRegressor(random_state=123),
+                  n_estimators=10, random_state=123), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001ECCEBFC9D0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-04 19:11:06,548:INFO:Checking exceptions
+2024-02-04 19:11:06,548:INFO:Importing libraries
+2024-02-04 19:11:06,548:INFO:Copying training dataset
+2024-02-04 19:11:06,552:INFO:Defining folds
+2024-02-04 19:11:06,552:INFO:Declaring metric variables
+2024-02-04 19:11:06,555:INFO:Importing untrained model
+2024-02-04 19:11:06,555:INFO:Declaring custom model
+2024-02-04 19:11:06,559:INFO:AdaBoost Regressor Imported successfully
+2024-02-04 19:11:06,567:INFO:Starting cross validation
+2024-02-04 19:11:06,569:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-04 19:11:17,308:INFO:Calculating mean and std
+2024-02-04 19:11:17,308:INFO:Creating metrics dataframe
+2024-02-04 19:11:17,313:INFO:Finalizing model
+2024-02-04 19:11:20,997:INFO:Uploading results into container
+2024-02-04 19:11:20,997:INFO:Uploading model into container now
+2024-02-04 19:11:20,997:INFO:_master_model_container: 45
+2024-02-04 19:11:20,997:INFO:_display_container: 9
+2024-02-04 19:11:20,998:INFO:AdaBoostRegressor(estimator=GradientBoostingRegressor(random_state=123),
+                  n_estimators=10, random_state=123)
+2024-02-04 19:11:20,998:INFO:create_model() successfully completed......................................
+2024-02-04 19:11:21,091:INFO:SubProcess create_model() end ==================================
+2024-02-04 19:11:21,091:INFO:Creating Dashboard logs
+2024-02-04 19:11:21,091:INFO:Model: AdaBoost Regressor
+2024-02-04 19:11:21,106:INFO:Logged params: {'base_estimator': 'deprecated', 'estimator__alpha': 0.9, 'estimator__ccp_alpha': 0.0, 'estimator__criterion': 'friedman_mse', 'estimator__init': None, 'estimator__learning_rate': 0.1, 'estimator__loss': 'squared_error', 'estimator__max_depth': 3, 'estimator__max_features': None, 'estimator__max_leaf_nodes': None, 'estimator__min_impurity_decrease': 0.0, 'estimator__min_samples_leaf': 1, 'estimator__min_samples_split': 2, 'estimator__min_weight_fraction_leaf': 0.0, 'estimator__n_estimators': 100, 'estimator__n_iter_no_change': None, 'estimator__random_state': 123, 'estimator__subsample': 1.0, 'estimator__tol': 0.0001, 'estimator__validation_fraction': 0.1, 'estimator__verbose': 0, 'estimator__warm_start': False, 'estimator': GradientBoostingRegressor(random_state=123), 'learning_rate': 1.0, 'loss': 'linear', 'n_estimators': 10, 'random_state': 123}
+2024-02-04 19:11:21,176:INFO:Initializing predict_model()
+2024-02-04 19:11:21,176:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, estimator=AdaBoostRegressor(estimator=GradientBoostingRegressor(random_state=123),
+                  n_estimators=10, random_state=123), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=False, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001ECD072A3A0>)
+2024-02-04 19:11:21,176:INFO:Checking exceptions
+2024-02-04 19:11:21,176:INFO:Preloading libraries
+2024-02-04 19:11:21,578:INFO:_master_model_container: 45
+2024-02-04 19:11:21,578:INFO:_display_container: 9
+2024-02-04 19:11:21,578:INFO:AdaBoostRegressor(estimator=GradientBoostingRegressor(random_state=123),
+                  n_estimators=10, random_state=123)
+2024-02-04 19:11:21,578:INFO:ensemble_model() successfully completed......................................
+2024-02-04 19:11:27,894:INFO:Initializing blend_models()
+2024-02-04 19:11:27,894:INFO:blend_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, estimator_list=[GradientBoostingRegressor(random_state=123), LGBMRegressor(n_jobs=-1, random_state=123), ExtraTreesRegressor(n_jobs=-1, random_state=123)], fold=None, round=4, choose_better=False, optimize=R2, method=auto, weights=None, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, return_train_score=False)
+2024-02-04 19:11:27,894:INFO:Checking exceptions
+2024-02-04 19:11:27,909:INFO:Importing libraries
+2024-02-04 19:11:27,910:INFO:Copying training dataset
+2024-02-04 19:11:27,910:INFO:Getting model names
+2024-02-04 19:11:27,910:INFO:SubProcess create_model() called ==================================
+2024-02-04 19:11:27,917:INFO:Initializing create_model()
+2024-02-04 19:11:27,917:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, estimator=VotingRegressor(estimators=[('Gradient Boosting Regressor',
+                             GradientBoostingRegressor(random_state=123)),
+                            ('Light Gradient Boosting Machine',
+                             LGBMRegressor(n_jobs=-1, random_state=123)),
+                            ('Extra Trees Regressor',
+                             ExtraTreesRegressor(n_jobs=-1, random_state=123))],
+                n_jobs=-1), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001ECCF2D8880>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-04 19:11:27,917:INFO:Checking exceptions
+2024-02-04 19:11:27,917:INFO:Importing libraries
+2024-02-04 19:11:27,917:INFO:Copying training dataset
+2024-02-04 19:11:27,917:INFO:Defining folds
+2024-02-04 19:11:27,917:INFO:Declaring metric variables
+2024-02-04 19:11:27,925:INFO:Importing untrained model
+2024-02-04 19:11:27,925:INFO:Declaring custom model
+2024-02-04 19:11:27,927:INFO:Voting Regressor Imported successfully
+2024-02-04 19:11:27,936:INFO:Starting cross validation
+2024-02-04 19:11:27,941:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-04 19:11:32,560:INFO:Calculating mean and std
+2024-02-04 19:11:32,561:INFO:Creating metrics dataframe
+2024-02-04 19:11:32,561:INFO:Finalizing model
+2024-02-04 19:11:33,527:INFO:Uploading results into container
+2024-02-04 19:11:33,527:INFO:Uploading model into container now
+2024-02-04 19:11:33,527:INFO:_master_model_container: 46
+2024-02-04 19:11:33,527:INFO:_display_container: 10
+2024-02-04 19:11:33,530:INFO:VotingRegressor(estimators=[('Gradient Boosting Regressor',
+                             GradientBoostingRegressor(random_state=123)),
+                            ('Light Gradient Boosting Machine',
+                             LGBMRegressor(n_jobs=-1, random_state=123)),
+                            ('Extra Trees Regressor',
+                             ExtraTreesRegressor(n_jobs=-1, random_state=123))],
+                n_jobs=-1)
+2024-02-04 19:11:33,530:INFO:create_model() successfully completed......................................
+2024-02-04 19:11:33,627:INFO:SubProcess create_model() end ==================================
+2024-02-04 19:11:33,627:INFO:Creating Dashboard logs
+2024-02-04 19:11:33,627:INFO:Model: Voting Regressor
+2024-02-04 19:11:33,656:INFO:Logged params: {'estimators': [('Gradient Boosting Regressor', GradientBoostingRegressor(random_state=123)), ('Light Gradient Boosting Machine', LGBMRegressor(n_jobs=-1, random_state=123)), ('Extra Trees Regressor', ExtraTreesRegressor(n_jobs=-1, random_state=123))], 'n_jobs': -1, 'verbose': False, 'weights': None, 'Gradient Boosting Regressor': GradientBoostingRegressor(random_state=123), 'Light Gradient Boosting Machine': LGBMRegressor(n_jobs=-1, random_state=123), 'Extra Trees Regressor': ExtraTreesRegressor(n_jobs=-1, random_state=123), 'Gradient Boosting Regressor__alpha': 0.9, 'Gradient Boosting Regressor__ccp_alpha': 0.0, 'Gradient Boosting Regressor__criterion': 'friedman_mse', 'Gradient Boosting Regressor__init': None, 'Gradient Boosting Regressor__learning_rate': 0.1, 'Gradient Boosting Regressor__loss': 'squared_error', 'Gradient Boosting Regressor__max_depth': 3, 'Gradient Boosting Regressor__max_features': None, 'Gradient Boosting Regressor__max_leaf_nodes': None, 'Gradient Boosting Regressor__min_impurity_decrease': 0.0, 'Gradient Boosting Regressor__min_samples_leaf': 1, 'Gradient Boosting Regressor__min_samples_split': 2, 'Gradient Boosting Regressor__min_weight_fraction_leaf': 0.0, 'Gradient Boosting Regressor__n_estimators': 100, 'Gradient Boosting Regressor__n_iter_no_change': None, 'Gradient Boosting Regressor__random_state': 123, 'Gradient Boosting Regressor__subsample': 1.0, 'Gradient Boosting Regressor__tol': 0.0001, 'Gradient Boosting Regressor__validation_fraction': 0.1, 'Gradient Boosting Regressor__verbose': 0, 'Gradient Boosting Regressor__warm_start': False, 'Light Gradient Boosting Machine__boosting_type': 'gbdt', 'Light Gradient Boosting Machine__class_weight': None, 'Light Gradient Boosting Machine__colsample_bytree': 1.0, 'Light Gradient Boosting Machine__importance_type': 'split', 'Light Gradient Boosting Machine__learning_rate': 0.1, 'Light Gradient Boosting Machine__max_depth': -1, 'Light Gradient Boosting Machine__min_child_samples': 20, 'Light Gradient Boosting Machine__min_child_weight': 0.001, 'Light Gradient Boosting Machine__min_split_gain': 0.0, 'Light Gradient Boosting Machine__n_estimators': 100, 'Light Gradient Boosting Machine__n_jobs': -1, 'Light Gradient Boosting Machine__num_leaves': 31, 'Light Gradient Boosting Machine__objective': None, 'Light Gradient Boosting Machine__random_state': 123, 'Light Gradient Boosting Machine__reg_alpha': 0.0, 'Light Gradient Boosting Machine__reg_lambda': 0.0, 'Light Gradient Boosting Machine__subsample': 1.0, 'Light Gradient Boosting Machine__subsample_for_bin': 200000, 'Light Gradient Boosting Machine__subsample_freq': 0, 'Extra Trees Regressor__bootstrap': False, 'Extra Trees Regressor__ccp_alpha': 0.0, 'Extra Trees Regressor__criterion': 'squared_error', 'Extra Trees Regressor__max_depth': None, 'Extra Trees Regressor__max_features': 1.0, 'Extra Trees Regressor__max_leaf_nodes': None, 'Extra Trees Regressor__max_samples': None, 'Extra Trees Regressor__min_impurity_decrease': 0.0, 'Extra Trees Regressor__min_samples_leaf': 1, 'Extra Trees Regressor__min_samples_split': 2, 'Extra Trees Regressor__min_weight_fraction_leaf': 0.0, 'Extra Trees Regressor__n_estimators': 100, 'Extra Trees Regressor__n_jobs': -1, 'Extra Trees Regressor__oob_score': False, 'Extra Trees Regressor__random_state': 123, 'Extra Trees Regressor__verbose': 0, 'Extra Trees Regressor__warm_start': False}
+2024-02-04 19:11:33,756:INFO:Initializing predict_model()
+2024-02-04 19:11:33,756:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, estimator=VotingRegressor(estimators=[('Gradient Boosting Regressor',
+                             GradientBoostingRegressor(random_state=123)),
+                            ('Light Gradient Boosting Machine',
+                             LGBMRegressor(n_jobs=-1, random_state=123)),
+                            ('Extra Trees Regressor',
+                             ExtraTreesRegressor(n_jobs=-1, random_state=123))],
+                n_jobs=-1), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=False, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001ECD60269D0>)
+2024-02-04 19:11:33,756:INFO:Checking exceptions
+2024-02-04 19:11:33,756:INFO:Preloading libraries
+2024-02-04 19:11:34,224:INFO:_master_model_container: 46
+2024-02-04 19:11:34,224:INFO:_display_container: 10
+2024-02-04 19:11:34,224:INFO:VotingRegressor(estimators=[('Gradient Boosting Regressor',
+                             GradientBoostingRegressor(random_state=123)),
+                            ('Light Gradient Boosting Machine',
+                             LGBMRegressor(n_jobs=-1, random_state=123)),
+                            ('Extra Trees Regressor',
+                             ExtraTreesRegressor(n_jobs=-1, random_state=123))],
+                n_jobs=-1)
+2024-02-04 19:11:34,224:INFO:blend_models() successfully completed......................................
+2024-02-04 19:11:41,710:INFO:Initializing stack_models()
+2024-02-04 19:11:41,710:INFO:stack_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, estimator_list=[GradientBoostingRegressor(random_state=123), LGBMRegressor(n_jobs=-1, random_state=123), ExtraTreesRegressor(n_jobs=-1, random_state=123)], meta_model=None, meta_model_fold=5, fold=None, round=4, method=auto, restack=True, choose_better=False, optimize=R2, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, return_train_score=False)
+2024-02-04 19:11:41,710:INFO:Checking exceptions
+2024-02-04 19:11:41,710:INFO:Defining meta model
+2024-02-04 19:11:41,728:INFO:Getting model names
+2024-02-04 19:11:41,728:INFO:[('Gradient Boosting Regressor', GradientBoostingRegressor(random_state=123)), ('Light Gradient Boosting Machine', LGBMRegressor(n_jobs=-1, random_state=123)), ('Extra Trees Regressor', ExtraTreesRegressor(n_jobs=-1, random_state=123))]
+2024-02-04 19:11:41,728:INFO:SubProcess create_model() called ==================================
+2024-02-04 19:11:41,737:INFO:Initializing create_model()
+2024-02-04 19:11:41,737:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, estimator=StackingRegressor(cv=5,
+                  estimators=[('Gradient Boosting Regressor',
+                               GradientBoostingRegressor(random_state=123)),
+                              ('Light Gradient Boosting Machine',
+                               LGBMRegressor(n_jobs=-1, random_state=123)),
+                              ('Extra Trees Regressor',
+                               ExtraTreesRegressor(n_jobs=-1,
+                                                   random_state=123))],
+                  final_estimator=LinearRegression(n_jobs=-1), n_jobs=-1,
+                  passthrough=True), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001ECA7636FA0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-04 19:11:41,737:INFO:Checking exceptions
+2024-02-04 19:11:41,737:INFO:Importing libraries
+2024-02-04 19:11:41,737:INFO:Copying training dataset
+2024-02-04 19:11:41,737:INFO:Defining folds
+2024-02-04 19:11:41,737:INFO:Declaring metric variables
+2024-02-04 19:11:41,744:INFO:Importing untrained model
+2024-02-04 19:11:41,744:INFO:Declaring custom model
+2024-02-04 19:11:41,747:INFO:Stacking Regressor Imported successfully
+2024-02-04 19:11:41,755:INFO:Starting cross validation
+2024-02-04 19:11:41,755:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-04 19:12:03,650:INFO:Calculating mean and std
+2024-02-04 19:12:03,651:INFO:Creating metrics dataframe
+2024-02-04 19:12:03,657:INFO:Finalizing model
+2024-02-04 19:12:06,207:INFO:Uploading results into container
+2024-02-04 19:12:06,207:INFO:Uploading model into container now
+2024-02-04 19:12:06,208:INFO:_master_model_container: 47
+2024-02-04 19:12:06,208:INFO:_display_container: 11
+2024-02-04 19:12:06,213:INFO:StackingRegressor(cv=5,
+                  estimators=[('Gradient Boosting Regressor',
+                               GradientBoostingRegressor(random_state=123)),
+                              ('Light Gradient Boosting Machine',
+                               LGBMRegressor(n_jobs=-1, random_state=123)),
+                              ('Extra Trees Regressor',
+                               ExtraTreesRegressor(n_jobs=-1,
+                                                   random_state=123))],
+                  final_estimator=LinearRegression(n_jobs=-1), n_jobs=-1,
+                  passthrough=True)
+2024-02-04 19:12:06,213:INFO:create_model() successfully completed......................................
+2024-02-04 19:12:06,346:INFO:SubProcess create_model() end ==================================
+2024-02-04 19:12:06,346:INFO:Creating Dashboard logs
+2024-02-04 19:12:06,346:INFO:Model: Stacking Regressor
+2024-02-04 19:12:06,383:INFO:Logged params: {'cv': 5, 'estimators': [('Gradient Boosting Regressor', GradientBoostingRegressor(random_state=123)), ('Light Gradient Boosting Machine', LGBMRegressor(n_jobs=-1, random_state=123)), ('Extra Trees Regressor', ExtraTreesRegressor(n_jobs=-1, random_state=123))], 'final_estimator__copy_X': True, 'final_estimator__fit_intercept': True, 'final_estimator__n_jobs': -1, 'final_estimator__positive': False, 'final_estimator': LinearRegression(n_jobs=-1), 'n_jobs': -1, 'passthrough': True, 'verbose': 0, 'Gradient Boosting Regressor': GradientBoostingRegressor(random_state=123), 'Light Gradient Boosting Machine': LGBMRegressor(n_jobs=-1, random_state=123), 'Extra Trees Regressor': ExtraTreesRegressor(n_jobs=-1, random_state=123), 'Gradient Boosting Regressor__alpha': 0.9, 'Gradient Boosting Regressor__ccp_alpha': 0.0, 'Gradient Boosting Regressor__criterion': 'friedman_mse', 'Gradient Boosting Regressor__init': None, 'Gradient Boosting Regressor__learning_rate': 0.1, 'Gradient Boosting Regressor__loss': 'squared_error', 'Gradient Boosting Regressor__max_depth': 3, 'Gradient Boosting Regressor__max_features': None, 'Gradient Boosting Regressor__max_leaf_nodes': None, 'Gradient Boosting Regressor__min_impurity_decrease': 0.0, 'Gradient Boosting Regressor__min_samples_leaf': 1, 'Gradient Boosting Regressor__min_samples_split': 2, 'Gradient Boosting Regressor__min_weight_fraction_leaf': 0.0, 'Gradient Boosting Regressor__n_estimators': 100, 'Gradient Boosting Regressor__n_iter_no_change': None, 'Gradient Boosting Regressor__random_state': 123, 'Gradient Boosting Regressor__subsample': 1.0, 'Gradient Boosting Regressor__tol': 0.0001, 'Gradient Boosting Regressor__validation_fraction': 0.1, 'Gradient Boosting Regressor__verbose': 0, 'Gradient Boosting Regressor__warm_start': False, 'Light Gradient Boosting Machine__boosting_type': 'gbdt', 'Light Gradient Boosting Machine__class_weight': None, 'Light Gradient Boosting Machine__colsample_bytree': 1.0, 'Light Gradient Boosting Machine__importance_type': 'split', 'Light Gradient Boosting Machine__learning_rate': 0.1, 'Light Gradient Boosting Machine__max_depth': -1, 'Light Gradient Boosting Machine__min_child_samples': 20, 'Light Gradient Boosting Machine__min_child_weight': 0.001, 'Light Gradient Boosting Machine__min_split_gain': 0.0, 'Light Gradient Boosting Machine__n_estimators': 100, 'Light Gradient Boosting Machine__n_jobs': -1, 'Light Gradient Boosting Machine__num_leaves': 31, 'Light Gradient Boosting Machine__objective': None, 'Light Gradient Boosting Machine__random_state': 123, 'Light Gradient Boosting Machine__reg_alpha': 0.0, 'Light Gradient Boosting Machine__reg_lambda': 0.0, 'Light Gradient Boosting Machine__subsample': 1.0, 'Light Gradient Boosting Machine__subsample_for_bin': 200000, 'Light Gradient Boosting Machine__subsample_freq': 0, 'Extra Trees Regressor__bootstrap': False, 'Extra Trees Regressor__ccp_alpha': 0.0, 'Extra Trees Regressor__criterion': 'squared_error', 'Extra Trees Regressor__max_depth': None, 'Extra Trees Regressor__max_features': 1.0, 'Extra Trees Regressor__max_leaf_nodes': None, 'Extra Trees Regressor__max_samples': None, 'Extra Trees Regressor__min_impurity_decrease': 0.0, 'Extra Trees Regressor__min_samples_leaf': 1, 'Extra Trees Regressor__min_samples_split': 2, 'Extra Trees Regressor__min_weight_fraction_leaf': 0.0, 'Extra Trees Regressor__n_estimators': 100, 'Extra Trees Regressor__n_jobs': -1, 'Extra Trees Regressor__oob_score': False, 'Extra Trees Regressor__random_state': 123, 'Extra Trees Regressor__verbose': 0, 'Extra Trees Regressor__warm_start': False}
+2024-02-04 19:12:06,490:INFO:Initializing predict_model()
+2024-02-04 19:12:06,491:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, estimator=StackingRegressor(cv=5,
+                  estimators=[('Gradient Boosting Regressor',
+                               GradientBoostingRegressor(random_state=123)),
+                              ('Light Gradient Boosting Machine',
+                               LGBMRegressor(n_jobs=-1, random_state=123)),
+                              ('Extra Trees Regressor',
+                               ExtraTreesRegressor(n_jobs=-1,
+                                                   random_state=123))],
+                  final_estimator=LinearRegression(n_jobs=-1), n_jobs=-1,
+                  passthrough=True), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=False, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001ECD6026160>)
+2024-02-04 19:12:06,491:INFO:Checking exceptions
+2024-02-04 19:12:06,491:INFO:Preloading libraries
+2024-02-04 19:12:07,016:INFO:_master_model_container: 47
+2024-02-04 19:12:07,016:INFO:_display_container: 11
+2024-02-04 19:12:07,032:INFO:StackingRegressor(cv=5,
+                  estimators=[('Gradient Boosting Regressor',
+                               GradientBoostingRegressor(random_state=123)),
+                              ('Light Gradient Boosting Machine',
+                               LGBMRegressor(n_jobs=-1, random_state=123)),
+                              ('Extra Trees Regressor',
+                               ExtraTreesRegressor(n_jobs=-1,
+                                                   random_state=123))],
+                  final_estimator=LinearRegression(n_jobs=-1), n_jobs=-1,
+                  passthrough=True)
+2024-02-04 19:12:07,032:INFO:stack_models() successfully completed......................................
+2024-02-04 19:15:25,084:INFO:Initializing interpret_model()
+2024-02-04 19:15:25,084:INFO:interpret_model(estimator=LGBMRegressor(n_jobs=-1, random_state=123), use_train_data=False, X_new_sample=None, y_new_sample=None, feature=None, kwargs={}, observation=None, plot=summary, save=False, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>)
+2024-02-04 19:15:25,084:INFO:Checking exceptions
+2024-02-04 19:15:25,084:INFO:Soft dependency imported: shap: 0.44.1
+2024-02-04 19:15:25,599:INFO:plot type: summary
+2024-02-04 19:15:25,599:INFO:Creating TreeExplainer
+2024-02-04 19:15:25,690:INFO:Compiling shap values
+2024-02-04 19:15:26,155:INFO:Visual Rendered Successfully
+2024-02-04 19:15:26,155:INFO:interpret_model() successfully completed......................................
+2024-02-04 19:15:33,684:INFO:Initializing interpret_model()
+2024-02-04 19:15:33,684:INFO:interpret_model(estimator=LGBMRegressor(n_jobs=-1, random_state=123), use_train_data=False, X_new_sample=None, y_new_sample=None, feature=None, kwargs={}, observation=None, plot=correlation, save=False, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>)
+2024-02-04 19:15:33,684:INFO:Checking exceptions
+2024-02-04 19:15:33,685:INFO:Soft dependency imported: shap: 0.44.1
+2024-02-04 19:15:33,775:INFO:plot type: correlation
+2024-02-04 19:15:33,776:WARNING:No feature passed. Default value of feature used for correlation plot: MSSubClass_SPLIT FOYER
+2024-02-04 19:15:33,776:INFO:Creating TreeExplainer
+2024-02-04 19:15:33,847:INFO:Compiling shap values
+2024-02-04 19:15:33,942:INFO:model type detected: type 2
+2024-02-04 19:15:34,050:INFO:Visual Rendered Successfully
+2024-02-04 19:15:34,050:INFO:interpret_model() successfully completed......................................
+2024-02-04 19:15:50,452:INFO:Initializing interpret_model()
+2024-02-04 19:15:50,452:INFO:interpret_model(estimator=LGBMRegressor(n_jobs=-1, random_state=123), use_train_data=False, X_new_sample=None, y_new_sample=None, feature=None, kwargs={}, observation=12, plot=reason, save=False, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>)
+2024-02-04 19:15:50,452:INFO:Checking exceptions
+2024-02-04 19:15:50,452:INFO:Soft dependency imported: shap: 0.44.1
+2024-02-04 19:15:50,547:INFO:plot type: reason
+2024-02-04 19:15:50,547:INFO:model type detected: type 2
+2024-02-04 19:15:50,547:INFO:Creating TreeExplainer
+2024-02-04 19:15:50,620:INFO:Compiling shap values
+2024-02-04 19:15:50,721:INFO:Visual Rendered Successfully
+2024-02-04 19:15:50,721:INFO:interpret_model() successfully completed......................................
+2024-02-04 19:17:38,721:INFO:Initializing automl()
+2024-02-04 19:17:38,721:INFO:automl(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, optimize=R2, use_holdout=False, turbo=True, return_train_score=False)
+2024-02-04 19:17:38,721:INFO:Model Selection Basis : CV Results on Training set
+2024-02-04 19:17:38,721:INFO:Checking model 18
+2024-02-04 19:17:38,721:INFO:Checking model 20
+2024-02-04 19:17:38,721:INFO:Checking model 21
+2024-02-04 19:17:38,721:INFO:Checking model 22
+2024-02-04 19:17:38,721:INFO:Checking model 23
+2024-02-04 19:17:38,721:INFO:Checking model 24
+2024-02-04 19:17:38,721:INFO:Checking model 25
+2024-02-04 19:17:38,721:INFO:Checking model 26
+2024-02-04 19:17:38,721:INFO:Checking model 27
+2024-02-04 19:17:38,721:INFO:Checking model 28
+2024-02-04 19:17:38,721:INFO:Checking model 29
+2024-02-04 19:17:38,721:INFO:Checking model 30
+2024-02-04 19:17:38,721:INFO:Checking model 31
+2024-02-04 19:17:38,721:INFO:Checking model 32
+2024-02-04 19:17:38,721:INFO:Checking model 33
+2024-02-04 19:17:38,721:INFO:Checking model 34
+2024-02-04 19:17:38,721:INFO:Checking model 35
+2024-02-04 19:17:38,721:INFO:Checking model 36
+2024-02-04 19:17:38,721:INFO:Checking model 37
+2024-02-04 19:17:38,721:INFO:Checking model 38
+2024-02-04 19:17:38,721:INFO:Checking model 39
+2024-02-04 19:17:38,721:INFO:Checking model 40
+2024-02-04 19:17:38,721:INFO:Checking model 41
+2024-02-04 19:17:38,721:INFO:Checking model 42
+2024-02-04 19:17:38,721:INFO:Checking model 43
+2024-02-04 19:17:38,721:INFO:Checking model 44
+2024-02-04 19:17:38,721:INFO:Checking model 45
+2024-02-04 19:17:38,728:INFO:Checking model 46
+2024-02-04 19:17:38,728:INFO:Initializing create_model()
+2024-02-04 19:17:38,728:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, estimator=BaggingRegressor(estimator=GradientBoostingRegressor(random_state=123),
+                 n_estimators=50, random_state=123), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-04 19:17:38,728:INFO:Checking exceptions
+2024-02-04 19:17:38,730:INFO:Importing libraries
+2024-02-04 19:17:38,730:INFO:Copying training dataset
+2024-02-04 19:17:38,734:INFO:Defining folds
+2024-02-04 19:17:38,734:INFO:Declaring metric variables
+2024-02-04 19:17:38,734:INFO:Importing untrained model
+2024-02-04 19:17:38,734:INFO:Declaring custom model
+2024-02-04 19:17:38,735:INFO:Bagging Regressor Imported successfully
+2024-02-04 19:17:38,737:INFO:Cross validation set to False
+2024-02-04 19:17:38,737:INFO:Fitting Model
+2024-02-04 19:17:55,347:INFO:BaggingRegressor(estimator=GradientBoostingRegressor(random_state=123),
+                 n_estimators=50, random_state=123)
+2024-02-04 19:17:55,347:INFO:create_model() successfully completed......................................
+2024-02-04 19:17:55,620:INFO:BaggingRegressor(estimator=GradientBoostingRegressor(random_state=123),
+                 n_estimators=50, random_state=123)
+2024-02-04 19:17:55,622:INFO:automl() successfully completed......................................
+2024-02-04 19:18:09,500:INFO:Soft dependency imported: explainerdashboard: 0.4.5
+2024-02-04 19:18:10,071:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\dash\dash.py:538: UserWarning:
+
+JupyterDash is deprecated, use Dash instead.
+See https://dash.plotly.com/dash-in-jupyter for more details.
+
+
+2024-02-04 19:20:04,047:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,053:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,053:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,053:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,053:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,067:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,067:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,067:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,072:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,072:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,072:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,072:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,072:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,072:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,072:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,072:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,072:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,072:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,079:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,081:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,081:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,081:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,081:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,081:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,081:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,081:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,081:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,086:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,087:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,087:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,087:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,087:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,087:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,087:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,087:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,087:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,087:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,093:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,094:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,095:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,095:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,095:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,095:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,095:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,095:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,095:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,095:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,100:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,101:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,101:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,101:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,101:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,101:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,101:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,101:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,105:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,105:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,109:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,109:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,109:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:04,109:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,583:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,599:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,599:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,599:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,599:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,599:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,599:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,599:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,700:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,700:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,701:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,701:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,701:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,702:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,702:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,702:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,703:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,710:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,710:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,710:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:20:50,711:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\explainerdashboard\explainer_methods.py:421: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2024-02-04 19:22:50,397:INFO:Initializing predict_model()
+2024-02-04 19:22:50,397:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ECB85D5DF0>, estimator=LGBMRegressor(n_jobs=-1, random_state=123), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001ECDB347B80>)
+2024-02-04 19:22:50,397:INFO:Checking exceptions
+2024-02-04 19:22:50,397:INFO:Preloading libraries
+2024-02-04 19:23:13,722:INFO:Soft dependency imported: gradio: 3.50.0
+2024-02-04 19:23:13,732:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,732:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,732:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,732:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,732:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,732:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,732:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+`numeric` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,732:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,732:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,739:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,740:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,741:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,741:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,742:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,742:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,742:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+`numeric` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,743:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,743:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,744:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,744:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,744:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,744:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,744:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+`numeric` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,747:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,748:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,748:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,748:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,748:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,748:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,748:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,748:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,748:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+`numeric` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,753:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,753:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,753:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,753:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,753:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+`numeric` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,753:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,753:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,753:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,753:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,753:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+`numeric` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,759:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,759:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,760:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,760:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,760:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+`numeric` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,762:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,762:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,763:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,763:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5445: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,764:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+
+
+2024-02-04 19:23:13,764:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+`optional` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:13,764:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5447: GradioDeprecationWarning:
+
+`numeric` parameter is deprecated, and it has no effect
+
+
+2024-02-04 19:23:28,127:INFO:Soft dependency imported: fastapi: 0.109.1
+2024-02-04 19:23:28,127:INFO:Soft dependency imported: uvicorn: 0.27.0.post1
+2024-02-04 19:23:28,132:INFO:Soft dependency imported: pydantic: 1.10.12
+2024-02-04 19:23:28,150:INFO:Initializing save_model()
+2024-02-04 19:23:28,150:INFO:save_model(model=GradientBoostingRegressor(random_state=123), model_name=housing_price_api, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\joseg\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['LotFrontage', 'LotArea',
+                                             'LandSlope', 'OverallQual',
+                                             'OverallCond', 'YearBuilt',
+                                             'YearRemodAdd', 'MasVnrArea',
+                                             'ExterQual', 'ExterCond',
+                                             'BsmtQual', 'BsmtCond',
+                                             'BsmtExposure', 'BsmtFinType1',
+                                             'BsmtFinSF1', 'BsmtFinType2',
+                                             'BsmtFin...
+                                             'BldgType', 'HouseStyle',
+                                             'RoofStyle', 'RoofMatl',
+                                             'MasVnrType', 'Foundation',
+                                             'Heating', 'GarageType',
+                                             'MiscFeature', 'MoSold'],
+                                    transformer=OneHotEncoder(cols=['MSSubClass',
+                                                                    'MSZoning',
+                                                                    'LandContour',
+                                                                    'LotConfig',
+                                                                    'BldgType',
+                                                                    'HouseStyle',
+                                                                    'RoofStyle',
+                                                                    'RoofMatl',
+                                                                    'MasVnrType',
+                                                                    'Foundation',
+                                                                    'Heating',
+                                                                    'GarageType',
+                                                                    'MiscFeature',
+                                                                    'MoSold'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True)))]), verbose=False, use_case=MLUsecase.REGRESSION, kwargs={})
+2024-02-04 19:23:28,150:INFO:Adding model into prep_pipe
+2024-02-04 19:23:28,165:INFO:housing_price_api.pkl saved in current working directory
+2024-02-04 19:23:28,190:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['LotFrontage', 'LotArea',
+                                             'LandSlope', 'OverallQual',
+                                             'OverallCond', 'YearBuilt',
+                                             'YearRemodAdd', 'MasVnrArea',
+                                             'ExterQual', 'ExterCond',
+                                             'BsmtQual', 'BsmtCond',
+                                             'BsmtExposure', 'BsmtFinType1',
+                                             'BsmtFinSF1', 'BsmtFinType2',
+                                             'BsmtFinSF2', 'BsmtUnfSF',
+                                             'TotalBsmtSF', 'HeatingQ...
+                                             'Heating', 'GarageType',
+                                             'MiscFeature', 'MoSold'],
+                                    transformer=OneHotEncoder(cols=['MSSubClass',
+                                                                    'MSZoning',
+                                                                    'LandContour',
+                                                                    'LotConfig',
+                                                                    'BldgType',
+                                                                    'HouseStyle',
+                                                                    'RoofStyle',
+                                                                    'RoofMatl',
+                                                                    'MasVnrType',
+                                                                    'Foundation',
+                                                                    'Heating',
+                                                                    'GarageType',
+                                                                    'MiscFeature',
+                                                                    'MoSold'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', GradientBoostingRegressor(random_state=123))])
+2024-02-04 19:23:28,190:INFO:save_model() successfully completed......................................
+2024-02-04 19:24:06,592:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-04 19:24:06,592:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-04 19:24:06,592:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-04 19:24:06,592:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-04 19:24:06,777:INFO:Initializing load_model()
+2024-02-04 19:24:06,777:INFO:load_model(model_name=housing_price_api, platform=None, authentication=None, verbose=True)
+2024-02-04 19:25:16,918:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-04 19:25:16,918:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-04 19:25:16,918:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-04 19:25:16,918:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-04 19:25:17,103:INFO:Initializing load_model()
+2024-02-04 19:25:17,103:INFO:load_model(model_name=housing_price_api, platform=None, authentication=None, verbose=True)
